@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* Reset default styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: 'Shadows Into Light', ;
+  background: url('pictures/bg pic.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  color: #000000;
+  padding: 20px;
+  margin: 0;
+  font-size: 16px; /* Base font size */
+}
+
+header {
+  background: url('header/bg pic.jpg') no-repeat center center; 
+  background-size: cover;
+  padding: 50px; 
+  text-align: center;
+  border-radius: 8px;
+  color: #fff; 
+}
+
+header .title {
+  font-size: 2.5em; 
+  color: #fffefd;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #d28e36;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: #b0752f;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2em;
+  color: #d28e36;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #d28e36; /* Ensure h2 matches h1 color */
+}
+
+.history {
+  line-height: 1.8; /* Increase line height for better readability */
+}
+
+.history .period {
+  margin-bottom: 30px; /* Increased spacing between periods */
+}
+
+.history p {
+  font-size: 1.1em; /* Slightly larger font size for paragraphs */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #6f4f28; 
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #5b3a1f; 
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; /* Ensure images wrap on smaller screens */
+  gap: 20px; /* Space between images */
+}
+
+.image-gallery img {
+  width: 48%;
+  height: auto;
+  border: 5px solid #c0a16b; 
+  border-radius: 8px; 
+}

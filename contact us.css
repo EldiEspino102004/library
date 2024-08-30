@@ -1,0 +1,54 @@
+/* Contact Us Section Styling */
+.contact-us {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+
+.contact-us h1 {
+  font-family: 'Shadows Into Light', cursive; /* Decorative font for main heading */
+  font-size: 2.5em;
+  color: #d28e36;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us button {
+  background-color: #6f4f28;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-us button:hover {
+  background-color: #5b3a1f;
+}

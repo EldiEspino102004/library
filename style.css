@@ -1,0 +1,234 @@
+/* Import the fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap');
+
+/* Reset default styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('breads/bgpic.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+  font-size: 16px;
+}
+
+header {
+  background: rgba(51, 51, 51, 0.6);
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header .title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  background-color: rgba(210, 142, 54, 0.8);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar a {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: #b0752f;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  color: #d28e36;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #6f4f28;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background-color: #5b3a1f;
+}
+
+/* Flexbox for buttons to be aligned horizontally */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Gallery styling */
+.pastry-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pastry-gallery div {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+}
+
+.pastry-gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.pastry-gallery button.add-to-cart {
+  background-color: #a3793a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.pastry-gallery button.add-to-cart:hover {
+  background-color: #8b5b2f;
+}
+
+/* Remove button styling */
+.pastry-gallery button.remove-item {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #c9302c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pastry-gallery button.remove-item:hover {
+  background-color: #a30000;
+}
+
+/* Cart styling */
+#cart {
+  margin-top: 20px;
+}
+
+#cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+#cart li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-right: 30px;
+}
+
+#cart button.remove-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #c9302c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cart button.remove-item:hover {
+  background-color: #a30000;
+}
+
+#receipt {
+  margin-top: 20px;
+}
+
+#receipt-details-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#receipt-details {
+  margin-bottom: 10px;
+}
+
+#print-receipt, #new-order {
+  margin-top: 10px;
+}

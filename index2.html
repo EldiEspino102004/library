@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastry Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pastry Shop</h1>
+        <nav class="navbar">
+            <a href="pastry shop.html">Home</a>
+            <a href="index.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pastry-gallery" id="pastry-gallery">
+            <div>
+                <img src="coffees/coffee3.jfif" alt="Espresso" data-info="espresso,120">
+                <p>Espresso</p>
+                <p>₱120.00</p>
+                <button class="add-to-cart" data-info="espresso,120" aria-label="Add Espresso to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="coffees/coffee2.jpg" alt="Latte" data-info="latte,150">
+                <p>Latte</p>
+                <p>₱150.00</p>
+                <button class="add-to-cart" data-info="latte,150" aria-label="Add Latte to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="coffees/coffee1.jfif" alt="Cappuccino" data-info="cappuccino,140">
+                <p>Cappuccino</p>
+                <p>₱140.00</p>
+                <button class="add-to-cart" data-info="cappuccino,140" aria-label="Add Cappuccino to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="coffees/coffee4.jfif" alt="Americano" data-info="americano,130">
+                <p>Americano</p>
+                <p>₱130.00</p>
+                <button class="add-to-cart" data-info="americano,130" aria-label="Add Americano to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="coffees/coffee5.jfif" alt="Mocha" data-info="mocha,160">
+                <p>Mocha</p>
+                <p>₱160.00</p>
+                <button class="add-to-cart" data-info="mocha,160" aria-label="Add Mocha to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="coffees/coffee6.jpg" alt="Macchiato" data-info="macchiato,140">
+                <p>Macchiato</p>
+                <p>₱140.00</p>
+                <button class="add-to-cart" data-info="macchiato,140" aria-label="Add Macchiato to Cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section id="order">
+            <h2>Order Your Pastry</h2>
+            <form id="order-form">
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment">
+                    <option value="Cash in">Cash in</option>
+                    <option value="Gcash">Gcash</option>
+                </select>
+                <div class="button-group">
+                    <button type="button" id="clear-cart" aria-label="Clear Cart">Clear Cart</button>
+                    <button onclick="window.location.href='index.html';" aria-label="Back to Home">Back to Pastries</button>
+                    <button type="submit">Place Order</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-message"></p>
+        </section>
+
+        <section id="receipt" style="display: none;">
+            <h2>Receipt</h2>
+            <div id="receipt-details-container">
+                <div id="receipt-details"></div>
+                <p id="receipt-payment"></p>
+            </div>
+            <button id="print-receipt" type="button" aria-label="Print Receipt">Print Receipt</button>
+            <button id="new-order" type="button" aria-label="New Order">New Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <center>
+            <p>&copy; 2024 Kysha & Cyle's. All rights reserved.</p>
+            
+        </center>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

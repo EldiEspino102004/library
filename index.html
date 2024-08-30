@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastry Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pastry Shop</h1>
+        <nav class="navbar">
+            <a href="pastry shop.html">Home</a>
+            <a href="index.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pastry-gallery" id="pastry-gallery">
+            <div>
+                <img src="breads/pic1.jpg" alt="Croissant" data-info="croissant">
+                <p>Croissant</p>
+                <p>₱168.00</p>
+                <button class="add-to-cart" data-info="croissant" aria-label="Add Croissant to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="breads/pic2.jpg" alt="Muffin" data-info="muffin">
+                <p>Muffin</p>
+                <p>₱140.00</p>
+                <button class="add-to-cart" data-info="muffin" aria-label="Add Muffin to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="breads/pic3.jpg" alt="Danish" data-info="danish">
+                <p>Danish</p>
+                <p>₱196.00</p>
+                <button class="add-to-cart" data-info="danish" aria-label="Add Danish to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="breads/pic4.jpg" alt="Tart" data-info="tart">
+                <p>Tart</p>
+                <p>₱224.00</p>
+                <button class="add-to-cart" data-info="tart" aria-label="Add Tart to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="breads/pic5.jpg" alt="Eclair" data-info="eclair">
+                <p>Eclair</p>
+                <p>₱210.00</p>
+                <button class="add-to-cart" data-info="eclair" aria-label="Add Eclair to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="breads/pic6.jpg" alt="Brownie" data-info="brownie">
+                <p>Brownie</p>
+                <p>₱156.80</p>
+                <button class="add-to-cart" data-info="brownie" aria-label="Add Brownie to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="breads/pic7.jfif" alt="Madeleine" data-info="madeleine">
+                <p>Madeleine</p>
+                <p>₱179.20</p>
+                <button class="add-to-cart" data-info="madeleine" aria-label="Add Madeleine to Cart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="breads/pic8.jpg" alt="Macaron" data-info="macaron">
+                <p>Macaron</p>
+                <p>₱252.00</p>
+                <button class="add-to-cart" data-info="macaron" aria-label="Add Macaron to Cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section id="order">
+            <h2>Order Your Pastry</h2>
+            <form id="order-form">
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment">
+                    <option value="Cash in">Cash in</option>
+                    <option value="Gcash">Gcash</option>
+                </select>
+                <div class="button-group">
+                    <button type="button" id="clear-cart" aria-label="Clear Cart">Clear Cart</button>
+                    <button id="add-coffee-button" type="button" aria-label="Go to Coffee Shop">Add a Coffee</button>
+                    <button type="submit">Place Order</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-message"></p>
+        </section>
+
+        <section id="receipt" style="display: none;">
+            <h2>Receipt</h2>
+            <div id="receipt-details-container">
+                <div id="receipt-details"></div>
+                <p id="receipt-payment"></p>
+            </div>
+            <button id="print-receipt" type="button" aria-label="Print Receipt">Print Receipt</button>
+            <button id="new-order" type="button" aria-label="New Order">New Order</button>
+        </section>
+    </main>
+
+    <footer>
+       <center> <p>&copy; 2024 Kysha & Cyle's. All rights reserved.</p> </center>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

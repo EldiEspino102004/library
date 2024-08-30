@@ -1,0 +1,241 @@
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* Reset default styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: 'Shadows Into Light', cursive;
+  background: url('pictures/bg pic.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  color: #000000;
+  padding: 20px;
+  margin: 0;
+  font-size: 16px; /* Base font size */
+}
+
+header {
+  background: url('header/bg pic.jpg') no-repeat center center; 
+  background-size: cover;
+  padding: 50px; 
+  text-align: center;
+  border-radius: 8px;
+  color: #fff; 
+}
+
+header .title {
+  font-size: 2.5em; 
+  color: #fffefd;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #d28e36;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: #b0752f;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2em;
+  color: #d28e36;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #6f4f28; 
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #5b3a1f; 
+}
+
+/* About Us Section Styling */
+.about-us {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-us h1 {
+  font-family: 'Shadows Into Light', cursive; /* Decorative font for main heading */
+  font-size: 2.5em;
+  color: #d28e36;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  margin-top: 20px;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-family: 'Shadows Into Light', cursive; /* Decorative font for section headings */
+  font-size: 2em;
+  color: #d28e36;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.team-profiles {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #d28e36; /* Border color for team member images */
+}
+
+.team-member h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.team-member p {
+  font-size: 1.1em;
+}
+
+/* Contact Us Section Styling */
+.contact-us {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us h1 {
+  font-family: 'Shadows Into Light', cursive; /* Decorative font for main heading */
+  font-size: 2.5em;
+  color: #d28e36;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-us label {
+  font-size: 1.2em;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us button {
+  background-color: #6f4f28;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-us button:hover {
+  background-color: #5b3a1f;
+}
+
+/* Ensure images fit within their container */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Adjust to 'contain' if you want the entire image to be visible */
+  display: block; /* Remove any extra space below images */
+}
